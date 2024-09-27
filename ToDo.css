@@ -1,0 +1,60 @@
+.container
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(238, 238, 238);
+    height: 300px;
+    width: 300px;
+    padding: 100px;
+    border-radius: 20px;
+    margin: 25px;
+}
+.container input
+{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.todo-item
+{
+    align-items: center;
+    display: grid;
+    grid-template-columns: 6fr 6fr 3fr;
+    padding: 12px;
+    margin: 10px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+h1{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+body{
+    background-color: rgb(120, 120, 190);
+}
+.add-button
+{
+    position: absolute;
+    top: 21%;
+    left: 80%;
+    transform: translate(-10%, -10%);
+    background-color: rgb(132, 104, 104);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(255, 255, 255);
+    margin: 10px;
+    
+}
+.add-button:hover
+{
+    background-color: rgb(160, 130, 130);
+    color: rgb(0, 0, 0);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
