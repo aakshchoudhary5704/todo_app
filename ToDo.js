@@ -1,14 +1,4 @@
-// alert("working");
-let todolist = [
-    {
-        item :'Buy milk',
-        dueDate: '04/05/2004'
-    }, 
-    {
-        item:'Buy bread',
-        dueDate: '04/05/2004'
-    }
-];
+let todolist = [];
 displayItems();
 
 function addTodo()
@@ -36,13 +26,11 @@ function displayItems()
     {
         let item = todolist[i].item;
         let dueDate = todolist[i].dueDate;
-        // let {item, duedate} = todolist[i];
 
         newHtml += ` 
         <span>${item}</span>
         <sapn>${dueDate}</sapn>
-        <button onclick="todolist.splice(${i},1);displayItems();">Delete
-        </button>
+        <button style="background-color: red; color: black;text-weight: 800; border: none; padding: 10px 20px; font-size: 16px; cursor: pointer;margin: 5px;border-radius: 5px;" onclick="todolist.splice(${i},1);displayItems();">Delete</button>
         `;
     }
     todoElement.innerHTML = newHtml;

@@ -1,5 +1,7 @@
-.container
-{
+body {
+    background-color: rgb(155, 155, 196);
+}
+.container {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -10,51 +12,109 @@
     padding: 100px;
     border-radius: 20px;
     margin: 25px;
+    box-shadow: 10px 8px 9px rgba(40, 38, 38, 0.8);
 }
-.container input
-{
+
+.container input {
     margin: 10px;
     padding: 10px;
     border-radius: 10px;
     border: 1px solid rgb(255, 255, 255);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.todo-item
-{
+
+.todo-item {
+    position: relative;
+    top: 20px;
     align-items: center;
+    border-radius: 20px;
     display: grid;
-    grid-template-columns: 6fr 6fr 3fr;
+    grid-template-columns: 1fr 1fr 1fr;
     padding: 12px;
     margin: 10px;
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
+    width: 100%;
 }
-h1{
+
+h1 {
     text-align: center;
     align-items: center;
+    margin-top: 20px;
     justify-content: center;
-    color: white;
+    font-size: 4rem;
+    background: linear-gradient(to top, #ffffff, #433b3b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    /* text-fill-color: transparent; */
 }
-body{
-    background-color: rgb(120, 120, 190);
-}
-.add-button
-{
+
+
+
+.add-button {
     position: absolute;
-    top: 21%;
-    left: 80%;
+    top: 23%;
+    left: 75%;
     transform: translate(-10%, -10%);
-    background-color: rgb(132, 104, 104);
-    color: white;
-    padding: 10px;
-    border-radius: 10px;
-    border: 1px solid rgb(255, 255, 255);
-    margin: 10px;
-    
-}
-.add-button:hover
-{
-    background-color: rgb(160, 130, 130);
+    background-color: rgb(193, 151, 151);
     color: rgb(0, 0, 0);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(46, 46, 46, 0.2), 0 6px 20px 0 rgba(54, 54, 54, 0.19);
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: background-color 0.2s ease;
+}
+
+.add-button:hover {
+    background-color: rgb(163, 101, 101);
+    color: rgb(255, 255, 255);
+    font-weight:thin;
+    box-shadow: 0 4px 8px  rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 600px) {
+    .container {
+        position: relative;
+        top: 280px;
+        left: 180px;
+        width: 50%;
+        height: 50%;
+    }
+
+    .add-button {   
+        width: 25%;
+        padding: 10px;
+        font-size: 16px;
+        position: absolute;
+        top: 37%;
+        left: 75%;
+        transform: translate(-50%, -45%);
+    }
+
+    .todo-item {
+        position: relative;
+        bottom: 20px;
+        right: 100px;
+        align-items: center;
+        border-radius: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 12px;
+        margin: 30px;
+        width: 160%;
+        background-color: rgb(255, 255, 255);    
+    }
+    .container input {
+        position: relative;
+        bottom: 40px;
+        right: 40px;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid rgb(255, 255, 255);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    
 }
